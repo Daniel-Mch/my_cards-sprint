@@ -1,0 +1,104 @@
+/* Your card CSS file */
+
+/* Summing up: if an image has meaning, in terms of your content,
+you should use an HTML image.
+If an image is purely decoration, you should use CSS background images. */
+
+/* Card Category */
+.card-category {
+  margin: 20px 0;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 80%), url(https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+/* Card Product */
+.card-product {
+  margin: 20px 0;
+  height: 150px;
+  width: 100%;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9)
+}
+
+.card-product p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.card-product img {
+  height: 100%;
+  /* width: 150px; If you want to make it square */
+  /* object-fit: cover; If you want to avoid stretching */
+  border-radius: 10px 0 0 5px;
+}
+
+.card-product-info {
+  padding-left: 20px;
+}
+
+/* Card Trip*/
+
+.card-trip {
+  margin: 20px 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-trip .card-trip-price {
+  font-size: 20px;
+}
+.card-trip-info h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 0;
+}
+
+
+.card-trip-info p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.card-trip .card-trip-info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+.card-trip .card-trip-avatar {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+
+}
+
